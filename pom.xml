@@ -10,8 +10,8 @@
   <groupId>com.github.programmationmultithread</groupId>
   <artifactId>tp-mandelbrot</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>TP Mandelbrot — Concurrent Multithreaded Programming</name>
-  <description>Starter code for a practical session on parallelism in the course at Nantes Université.</description>
+  <name>Parallélisation de calcul d'image — Concurrent Multithreaded Programming</name>
+  <description>Starter code for a practical session on parallelism.</description>
   <url>https://github.com/ProgrammationMultiThread/TP-mandelbrot</url>
 
   <licenses>

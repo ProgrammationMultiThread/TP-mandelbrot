@@ -44,15 +44,7 @@ public class Main {
 		//   - one that computes the image in a separate thread
 		//   - one that parallelizes the computation into one thread per Area object
 		//   - one that parallelizes the computation into n threads
-		Drawer drawer = graphics -> {
-			for(var area : areas) {
-				// Recomputes the image each time the panel is refreshed...
-				var image = area.getImage(function, palette);
-				// ... and waits until the image is ready to be drawn
-				area.drawImage(graphics, image);
-			}
-			return true;
-		};
+		Drawer drawer = new SequentialDrawer(function, areas, palette);
 		
 		// Creates the window on which the picture will be drawn
 		new Client(drawer).setVisible(true);
